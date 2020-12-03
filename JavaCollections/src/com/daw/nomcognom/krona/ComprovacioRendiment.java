@@ -10,6 +10,8 @@ public class ComprovacioRendiment {
 	List<Waypoint_Dades> llistaArrayList;
 	List<Waypoint_Dades> llistaLinkedList;
 	
+	publicArrayList<Ruta_Dades> llistaRutes; 
+	
 	public ComprovacioRendiment() {
 	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
 	
@@ -18,4 +20,6 @@ public class ComprovacioRendiment {
 	this.llistaLinkedList = new LinkedList<Waypoint_Dades>();
 	
 	}
+	
+	
 }
