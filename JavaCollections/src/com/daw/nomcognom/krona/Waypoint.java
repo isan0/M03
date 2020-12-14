@@ -32,7 +32,9 @@ public class Waypoint {
 	}
 	
 	// 3
-	public static ComprovacioRendiment comprovarRendimentInsercio(ComprovacioRendiment comprovacioRendimentTmp) {}
+	public static ComprovacioRendiment comprovarRendimentInsercio(ComprovacioRendiment comprovacioRendimentTmp) {
+		
+	}
 	
 	
 	// 4
@@ -51,8 +53,7 @@ public class Waypoint {
 		System.out.println();
 		System.out.println("---- APARTAT 1 (bucle for ----");
 		int idTmp;
-		for(Waypoint_Dades waypointTmp2 : comprovacioRendiment)
-			
+		
 		if(waypointTmp2.getId() < 6) {
 			comprovacioRendimentTmp.llistaArrayList.remove(idTmp);
 			System.out.println();
@@ -62,11 +63,37 @@ public class Waypoint {
 		System.out.println("---- APARTAT 2 (comprovacio) ----");
 		it = comprovacioRendimentTmp.llistaLinkedList.iterator();
 		while(it.hasNext()) {
-			waypointTmp = it.next();
+			waypointTmp = int.next();
 			System.out.println("El waypoint amb id= " + comprovacioRendimentTmp.llistaLinkedList);
 		}
 		
 		System.out.println();
 		System.out.println("---- APARTAT 3 ----");
+	}
+	
+	public static ComprovacioRendiment modificarCoordenadesINomDeWaypoints(ComprovacioRendiment comprovacioRendimentTmp) {};
+	
+	public static Waypoint inicialitzaDadesWaypoint() {
+		return null;
+	}
+	
+	public static Waypoint nouWaypoint() {
+		return null;
+	}
+	
+	public static Waypoint waypointsVsTipus() {
+		return null;
+	}
+	
+	public static Waypoint numWaypointsVsTipus() {
+		return null;
+	}
+	
+	public static Waypoint trobarWaypointvsNom() {
+		return null;
+	}
+	
+	public static Waypoint ordenarWaypointsPerData() {
+		return null;
 	}
 }
