@@ -71,6 +71,11 @@ public class Waypoint {
 		System.out.println("---- APARTAT 3 ----");
 	}
 	
+	public static void visualitzarWaypointsOrdenats(ComprovacioRendiment comprovacioRendimentTmp) {};
+	
+	public static void waypointsACertaDistanciaMaxDeLaTerra(ComprovacioRendiment comprovacioRendimentTmp) {};
+	
+	//Examen
 	public static ComprovacioRendiment modificarCoordenadesINomDeWaypoints(ComprovacioRendiment comprovacioRendimentTmp) {};
 	
 	public static Waypoint inicialitzaDadesWaypoint() {
