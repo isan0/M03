@@ -11,4 +11,6 @@ public class Waypoint_Dades {
 	private LocalDateTime dataCreacio;
 	private LocalDateTime dataAnulacio;
 	private LocalDateTime dataModificacio;
+	
+	private int tipus;
 }

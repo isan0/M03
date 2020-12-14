@@ -1,6 +1,7 @@
 package com.daw.nomcognom.krona;
 
 public abstract class Cadena {
+	
 	public static boolean stringIsInt(String cadena){
 		try {
 			Integer.parseInt(cadena);
@@ -8,4 +9,6 @@ public abstract class Cadena {
 		} catch (NumberFormatException nfe){
 			return false;
 		}
-}
+	}
+
+} 
