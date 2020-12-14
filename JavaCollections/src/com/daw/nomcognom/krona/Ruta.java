@@ -22,4 +22,48 @@ public class Ruta {
 		
 		return llistaWaypointLinkedList;
 	};
+	
+	public static void visualitzarRuta(ComprovacioRendiment comprovacioRendimentTmp) {
+		System.out.println("La ruta està formada pels waypoints:");
+		
+		for (Waypoint_Dades waypointTmp : comprovacioRendimentTmp.pilaWaypoints) {
+			System.out.println(waypointTmp.toString());
+		}
+	};
+	
+	
+	public static void invertirRuta(ComprovacioRendiment comprovacioRendimentTmp) {
+		Deque<Waypoint_Dades> pilaWaypointsInversa = new ArrayDeque<Waypoint_Dades>();
+		
+        while (!comprovacioRendimentTmp.pilaWaypoints.isEmpty()) {
+        	pilaWaypointsInversa.push(comprovacioRendimentTmp.pilaWaypoints.pop());
+        }
+        
+        while (!pilaWaypointsInversa.isEmpty()) {
+        	System.out.println(pilaWaypointsInversa.pop());
+        }
+	};
+	
+	
+	public static void existeixWaypointEnRuta(ComprovacioRendiment comprovacioRendimentTmp) {
+Waypoint_Dades wtmp;
+		
+		if (comprovacioRendimentTmp.pilaWaypoints.size() == 0) {
+			System.out.println("La ruta està buida.");
+		} else {
+			if (comprovacioRendimentTmp.pilaWaypoints.contains(comprovacioRendimentTmp.wtmp)) {
+				System.out.println("SI hem trobat el waypoint " + comprovacioRendimentTmp.wtmp.getNom() + " emmagatzemat en comprovacioRendimentTmp.wtmp, en la llista.");
+			} else {
+				System.out.println("NO hem trobat el waypoint " + comprovacioRendimentTmp.wtmp.getNom() + " emmagatzemat en comprovacioRendimentTmp.wtmp, en la llista.");
+			}
+			
+			wtmp = new Waypoint_Dades(4, "Òrbita de Júpiter", new int[] {4,4,4}, true, LocalDateTime.parse("21-10-2020 00:30", Data.formatter), null, LocalDateTime.parse("22-10-2020 23:55", Data.formatter));
+			if (comprovacioRendimentTmp.pilaWaypoints.contains(wtmp)) {
+				System.out.println("SI hem trobat el waypoint " + wtmp.getNom() + " creat ara mateix, en la llista.");
+			} else {
+				System.out.println("NO hem trobat el waypoint " + wtmp.getNom() + " creat ara mateix, en la llista.");
+			}
+		}
+	};
+	
 }
