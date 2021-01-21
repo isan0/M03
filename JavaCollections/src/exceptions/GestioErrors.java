@@ -34,11 +34,18 @@ public class GestioErrors {
 		}
 	}
 	
+	public static void met03() {
+		
+	}
+	
+	public static void funcio3() {
+		
+	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		met01();
-		met02();
+		//met01();
+		//met02();
 	}
 
 }
